@@ -1,0 +1,11 @@
+<h1>Hello World!</h1>
+
+<%= form_tag(controller: "events", action: "httparty_time", method: "post") do %>
+
+  <%= label_tag(:owner, "Github owner's username:") %>
+  <%= text_field_tag(:owner) %>
+  <%= label_tag(:repo, "Repo Name:") %>
+  <%= text_field_tag(:repo) %>
+  <%= submit_tag("Let's do this") %>
+<% end %>
+
